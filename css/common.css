@@ -1,0 +1,253 @@
+@charset "utf-8";
+@import url(reset.css);
+
+/* 한글은 노토산스로 */
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/NotoSansKr/NotoSansKR-Thin.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/NotoSansKR-Thin.woff") format('woff'),
+        url("../fonts/NotoSansKr/NotoSansKR-Thin.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/NotoSansKr/NotoSansKR-Light.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/NotoSansKR-Light.woff") format('woff'),
+        url("../fonts/NotoSansKr/NotoSansKR-Light.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/NotoSansKr/NotoSansKR-Regular.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/NotoSansKR-Regular.woff") format('woff'),
+        url("../fonts/NotoSansKr/NotoSansKR-Regular.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/NotoSansKr/NotoSansKR-Medium.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/NotoSansKR-Medium.woff") format('woff'),
+        url("../fonts/NotoSansKr/NotoSansKR-Medium.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/NotoSansKr/NotoSansKR-Bold.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/NotoSansKR-Bold.woff") format('woff'),
+        url("../fonts/NotoSansKr/NotoSansKR-Bold.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/NotoSansKr/NotoSansKR-Black.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/NotoSansKR-Black.woff") format('woff'),
+        url("../fonts/NotoSansKr/NotoSansKR-Black.otf") format('opentype');
+} 
+/* 영문, 숫자는 오픈산스로 */
+@font-face {
+    font-family: "NotoSansKR";
+    unicode-range: U+0020-007E;
+    font-style: normal;
+    src: url("../fonts/openSans/OpenSans-SemiBold.woff2") format('woff2'),
+        url("../fonts/openSans/OpenSans-SemiBold.woff") format('woff'),
+        url("../fonts/openSans/OpenSans-SemiBold.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    unicode-range: U+0020-007E;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/OpenSans/OpenSans-Light.woff2") format('woff2'),
+        url("../fonts/OpenSans/OpenSans-Light.woff") format('woff'),
+        url("../fonts/OpenSans/OpenSans-Light.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    unicode-range: U+0020-007E;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/OpenSans/OpenSans-Regular.woff2") format('woff2'),
+        url("../fonts/OpenSans/OpenSans-Regular.woff") format('woff'),
+        url("../fonts/OpenSans/OpenSans-Regular.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    unicode-range: U+0020-007E;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/OpenSans/OpenSans-SemiBold.woff2") format('woff2'),
+        url("../fonts/OpenSans/OpenSans-SemiBold.woff") format('woff'),
+        url("../fonts/OpenSans/OpenSans-SemiBold.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    unicode-range: U+0020-007E;
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/OpenSans/OpenSans-Bold.woff2") format('woff2'),
+        url("../fonts/OpenSans/OpenSans-Bold.woff") format('woff'),
+        url("../fonts/OpenSans/OpenSans-Bold.otf") format('opentype');
+}
+@font-face {
+    font-family: "NotoSansKR";
+    unicode-range: U+0020-007E;
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/NotoSansKr/OpenSans-ExtraBold.woff2") format('woff2'),
+        url("../fonts/NotoSansKr/OpenSans-ExtraBold.woff") format('woff'),
+        url("../fonts/NotoSansKr/OpenSans-ExtraBold.otf") format('opentype');
+} 
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    word-break: break-all;
+}
+body {
+    font: 14px "NotoSansKR";
+    color: #444;
+    font-weight: 500;
+    min-width: 320px;
+    background-color: #000;
+}
+
+/* main_header */
+#main_header {
+    width: 100%;
+    background-color: #fff;
+}
+/* top_menu */
+#main_header #top_menu {
+    width: 1280px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 0.9em;
+}
+/* left_menu */
+#main_header #top_menu #left_menu {
+    float: left;
+    overflow: hidden;
+}
+#main_header #top_menu #left_menu #language {
+    float: left;
+}
+#main_header #top_menu #left_menu #contact {
+    float: left;
+    padding-left: 10px;
+}
+select {
+    width: 110px;
+    padding: 1px 1px;
+    border: 1px solid #999;
+    font-family: inherit;
+    background: url('../images/arrow.png') no-repeat 100% 50%;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
+/* right_menu */
+#main_header #top_menu #right_menu {
+    float: right;
+    overflow: hidden;
+}
+#main_header #top_menu #right_menu #login {
+    float: left;
+}
+#main_header #top_menu #right_menu #search {
+    float: left;
+    padding-left: 10px;
+}
+
+/* bottom_menu */
+#main_header #bottom_menu {
+    width: 1280px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#main_header #bottom_menu #logo {
+    float: left;
+}
+/* gnb */
+#main_header #bottom_menu #gnb {
+    float: right;
+}
+#main_header #bottom_menu #gnb ul {
+    width: 400px;
+    overflow: hidden;
+}
+#main_header #bottom_menu #gnb ul li {
+    width: 33.3%;
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#main_header #bottom_menu #gnb ul li a {
+    width: 100%;
+    display:block;
+}
+#main_header #bottom_menu #gnb ul li a:hover {
+    background-color: #333;
+    color: #fff;
+    transition: 1s;
+}
+/* lnb */
+#main_header #bottom_menu #lnb {
+    display: none;
+}
+
+/* main_content */
+#main_content {
+    width: 100%;
+    height: 800px;
+    color: #fff;
+    text-align: center;
+}
+#main_content #main_img {
+
+}
+#main_content #main_txt {
+    font-size: 10em;
+    padding: 200px 0;
+}
+#main_content #main_txt span {
+    display: block;
+}
+
+/* about */
+#about {
+    width: 100%;
+    height: 2400px;
+}
+/* about_txt */
+#about #about_txt {
+    height: 800px;
+    color: #fff;
+    text-align: center;
+    font-size: 6em;
+    padding: 200px 0;
+}
+#about #about_txt span {
+    display: block;
+}
+#about #about_txt span:nth-child(1) {
+    letter-spacing: 50px;
+}
+
+/* about_video */
+#about_video { 
+    height: 800px;
+    z-index: 0; 
+}
