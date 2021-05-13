@@ -15,19 +15,19 @@
         <div id="top_menu">
             <div id="left_menu">
                 <div id="language">
-                    <select name="select_lang" onchange="window.open(this.value);">
+                    <select name="select_lang" id="select">
                         <option selected="selected">Language</option>
-                        <option value="#">English</option>
-                        <option value="#">Korean</option>
+                        <option data-lang="en">English</option>
+                        <option data-lang="ko">Korean</option>
                     </select>
                 </div>
                 <div id="contact">
-                    <a href="#">CONTACT</a>
+                    <a href="#" data-langNum="0">CONTACT</a>
                 </div>
             </div>
             <div id="right_menu">
                 <div id="login">
-                    <a href="#">SIGN IN</a>
+                    <a href="#" data-langNum="1">SIGN IN</a>
                 </div>
                 <div id="search">
                     <a href="#"><i class="fas fa-search"></i></a>
@@ -54,6 +54,7 @@
             </div>
         </div>
     </header>
+
     <main id="main_content">
         <div id="main_img">
 
@@ -105,6 +106,7 @@
                 Williams’ Givenchy offerings to utilise the show format, adding to the sense of drama and monumentalism in the clothing, yet never neglecting its distinct intimacy and its eventual relationship with the wearer.
             </span>
         </div>
+        <div id="stage_bg_01"></div>
         <div id="stage_slide">
             <ul class="slick">
                 <li><img src="/images/FW2021_Slider_Looks-01.jpg"></li>
@@ -127,6 +129,7 @@
                 With an original score by Robert Hood, one of the godfathers of minimal techno and a musician profoundly linked with the sound of Detroit, Williams’ commissioning displays his American heritage as well as a purposeful, emotional bridging and connecting of continents and cultures through sound.
             </span>
         </div>
+        <div id="stage_bg_02"></div>
     </section>
     <footer id="main_footer">
         <div id="gnb_footer">
@@ -134,7 +137,7 @@
                 <li>Givenchy</li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#collection">Collection</a></li>
-                <li><a href="#all_collection">All Collection</a></li>
+                <li><a href="/pages/all_collection.html">All Collection</a></li>
                 <li><a href="#stage">Stage</a></li>
             </ul>
             <ul>
