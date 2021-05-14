@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GIVENCHY</title>
-<link rel="stylesheet" href="library/fontawesome-free-5.15.3-web/css/all.min.css">
-<link rel="stylesheet" href="library/jquery.mb.YTPlayer-master/dist/css/jquery.mb.YTPlayer.min.css">
+<link rel="stylesheet" type="text/css" href="library/fontawesome-free-5.15.3-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="library/jquery.mb.YTPlayer-master/dist/css/jquery.mb.YTPlayer.min.css">
 <link rel="stylesheet" type="text/css" href="/library/slick-1.8.1/slick/slick.css"/>
-<link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <header id="main_header">
@@ -16,18 +16,18 @@
             <div id="left_menu">
                 <div id="language">
                     <select name="select_lang" id="select">
-                        <option selected="selected">Language</option>
-                        <option data-lang="en">English</option>
-                        <option data-lang="ko">Korean</option>
+                        <option selected="selected" data-langNum="0">Language</option>
+                        <option data-lang="ko" data-langNum="1">Korean</option>
+                        <option data-lang="en" data-langNum="2">English</option>
                     </select>
                 </div>
                 <div id="contact">
-                    <a href="#" data-langNum="0">CONTACT</a>
+                    <a href="#" data-langNum="3">CONTACT</a>
                 </div>
             </div>
             <div id="right_menu">
                 <div id="login">
-                    <a href="#" data-langNum="1">SIGN IN</a>
+                    <a href="#" data-langNum="4">SIGN IN</a>
                 </div>
                 <div id="search">
                     <a href="#"><i class="fas fa-search"></i></a>
@@ -36,20 +36,20 @@
         </div>
         <div id="bottom_menu">
             <div id="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="images/givenchy_logo.png" alt="Givenchy_logo">
                 </a>
             </div>
             <div id="gnb">
                 <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#collection">COLLECTION</a></li>
-                    <li><a href="#stage">STAGE</a></li>
+                    <li><a href="#about" data-langNum="5">ABOUT</a></li>
+                    <li><a href="#collection" data-langNum="6">COLLECTION</a></li>
+                    <li><a href="#stage" data-langNum="7">STAGE</a></li>
                 </ul>
             </div>
             <div id="lnb">
                 <div id="all_collection">
-                    <a href="#">ALL COLLECTION</a>
+                    <a href="/pages/all_collection.html" data-langNum="8">ALL COLLECTION</a>
                 </div>
             </div>
         </div>
@@ -68,10 +68,10 @@
         <div id="about_txt" class="txt_box">
             <span class="txt">2021</span>
             <span class="txt">WINTER COLLECTION</span>
-            <span class="txt txt_normal">
+            <span class="txt txt_normal" data-langNum="19">
                 “In many ways, this collection is about a constant tension between two worlds. It’s about finding personal meaning in difficult circumstances; it’s about sincerity in what we do rather than strategy. We wanted to bring a sense of lived reality alongside precision, elegance and extravagance in the clothing and looks. Ultimately, fashion for us is a way of being, feeling and connecting rather than a game to be played. It’s almost like monumentalising the everyday, filling it with emotion – like music you can wear.”
             </span>
-            <span class="txt">
+            <span class="txt" data-langNum="20">
                 Matthew M. Williams
             </span>
         </div>
@@ -79,7 +79,7 @@
     </section>
     <section id="collection" class="section section_02">
         <div id="collection_txt" class="txt_box">
-            <span class="txt_normal">
+            <span class="txt_normal" data-langNum="21">
                 In Williams’ Givenchy, there is a mix of lavishness and austerity, together with the imperfect beauty of humanity. It is a collection that is at once monumental and intimate, giving the wearer presence and audaciousness, yet still with a sense of a person at its centre with a tohell- with-it attitude. Ultimately, it is an offering that transcends troubled times.
             </span>
         </div>
@@ -96,12 +96,12 @@
             </ul>
         </div>
         <div id="more_btn">
-            <button type="button" onClick="location.href='#'">more view</button>
+            <button type="button" onClick="location.href='/pages/all_collection.html'" data-langNum="22">more view</button>
         </div>
     </section>
     <section id="stage" class="section section_03">
         <div id="stage_txt_01" class="txt_box">
-            <span class="txt_normal">
+            <span class="txt_normal" data-langNum="23">
                 This is the first of Matthew M. <br>
                 Williams’ Givenchy offerings to utilise the show format, adding to the sense of drama and monumentalism in the clothing, yet never neglecting its distinct intimacy and its eventual relationship with the wearer.
             </span>
@@ -125,36 +125,37 @@
             </ul>
         </div>
         <div id="stage_txt_02" class="txt_box">
-            <span class="txt_normal">
+            <span class="txt_normal" data-langNum="24">
                 With an original score by Robert Hood, one of the godfathers of minimal techno and a musician profoundly linked with the sound of Detroit, Williams’ commissioning displays his American heritage as well as a purposeful, emotional bridging and connecting of continents and cultures through sound.
             </span>
         </div>
         <div id="stage_bg_02"></div>
     </section>
+
     <footer id="main_footer">
         <div id="gnb_footer">
             <ul>
                 <li>Givenchy</li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#collection">Collection</a></li>
-                <li><a href="/pages/all_collection.html">All Collection</a></li>
-                <li><a href="#stage">Stage</a></li>
+                <li><a href="#about" data-langNum="9">About</a></li>
+                <li><a href="#collection" data-langNum="10">Collection</a></li>
+                <li><a href="/pages/all_collection.html" data-langNum="11">All Collection</a></li>
+                <li><a href="#stage" data-langNum="12">Stage</a></li>
             </ul>
             <ul>
-                <li>Language</li>
-                <li><a href="#">English</a></li>
-                <li><a href="#">Korean</a></li>
+                <li data-langNum="13">Language</li>
+                <li><a href="#none" data-lang="ko" data-langNum="14" class="lang_btn">Korean</a></li>
+                <li><a href="#none" data-lang="en" data-langNum="15" class="lang_btn">English</a></li>
             </ul>
             <ul>
                 <li></li>
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" data-langNum="16">Sign In</a></li>
+                <li><a href="#" data-langNum="17">Search</a></li>
+                <li><a href="#" data-langNum="18">Contact</a></li>
             </ul>
         </div>
         <div id="bottom_footer">
             <div id="footer_logo">
-                <a href="#"><img src="images/givenchy_footer_logo.png" alt=""></a>
+                <a href="index.html"><img src="images/givenchy_footer_logo.png" alt=""></a>
             </div>
             <div id="copyright">
                 <span>Copyright 2021. All rights reserved.</span>

@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* all_collection page */
 /* portfolio_section */
 .portfolio_section {
     width: 100%;
@@ -38,3 +39,5 @@
 .portfolio_item_wrap .portfolio_item a img {
     width: 24.5%;
 }
+
+/* join page */

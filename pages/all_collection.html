@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GIVENCHY</title>
+<title>All Collection - GIVENCHY</title>
 <link rel="stylesheet" href="../library/fontawesome-free-5.15.3-web/css/all.min.css">
 <link rel="stylesheet" href="../library/isotope-docs/css/isotope-docs.css"/>
 <link rel="stylesheet" href="../library/lightbox2-2.11.3/dist/css/lightbox.css" />
@@ -15,19 +15,19 @@
         <div id="top_menu">
             <div id="left_menu">
                 <div id="language">
-                    <select name="select_lang" onchange="window.open(this.value);">
-                        <option selected="selected">Language</option>
-                        <option value="#">English</option>
-                        <option value="#">Korean</option>
+                    <select name="select_lang" id="select">
+                        <option selected="selected" data-langNum="0">Language</option>
+                        <option data-lang="ko" data-langNum="1">Korean</option>
+                        <option data-lang="en" data-langNum="2">English</option>
                     </select>
                 </div>
                 <div id="contact">
-                    <a href="#">CONTACT</a>
+                    <a href="#" data-langNum="3">CONTACT</a>
                 </div>
             </div>
             <div id="right_menu">
                 <div id="login">
-                    <a href="#">SIGN IN</a>
+                    <a href="#" data-langNum="4">SIGN IN</a>
                 </div>
                 <div id="search">
                     <a href="#"><i class="fas fa-search"></i></a>
@@ -36,34 +36,35 @@
         </div>
         <div id="bottom_menu">
             <div id="logo">
-                <a href="#">
+                <a href="../index.html">
                     <img src="../images/givenchy_logo.png" alt="Givenchy_logo">
                 </a>
             </div>
             <div id="gnb">
                 <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#collection">COLLECTION</a></li>
-                    <li><a href="#stage">STAGE</a></li>
+                    <li><a href="../index.html#about" data-langNum="5">ABOUT</a></li>
+                    <li><a href="../index.html#collection" data-langNum="6">COLLECTION</a></li>
+                    <li><a href="../index.html#stage" data-langNum="7">STAGE</a></li>
                 </ul>
             </div>
             <div id="lnb">
                 <div id="all_collection">
-                    <a href="#">ALL COLLECTION</a>
+                    <a href="#" data-langNum="8">ALL COLLECTION</a>
                 </div>
             </div>
         </div>
     </header>
+
     <section class="portfolio_section"> 
         <ul class="btn_set"> 
                 <li class="on"> 
-                    <a href="#" data-filter="*">All</a> 
+                    <a href="#" data-filter="*" data-langNum="25">All</a> 
                 </li> 
                 <li> 
-                    <a href="#" data-filter=".woman">WOMAN</a> 
+                    <a href="#" data-filter=".woman" data-langNum="26">WOMAN</a> 
                 </li> 
                 <li> 
-                    <a href="#" data-filter=".man">MAN</a> 
+                    <a href="#" data-filter=".man" data-langNum="27">MAN</a> 
                 </li>
             </ul>
             
@@ -263,30 +264,31 @@
                 </div>
             </div> 
     </section>
+
     <footer id="main_footer">
         <div id="gnb_footer">
             <ul>
                 <li>Givenchy</li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#collection">Collection</a></li>
-                <li><a href="/pages/all_collection.html">All Collection</a></li>
-                <li><a href="#stage">Stage</a></li>
+                <li><a href="../index.html#about" data-langNum="9">About</a></li>
+                <li><a href="../index.html#collection" data-langNum="10">Collection</a></li>
+                <li><a href="/pages/all_collection.html" data-langNum="11">All Collection</a></li>
+                <li><a href="../index.html#stage" data-langNum="12">Stage</a></li>
             </ul>
             <ul>
-                <li>Language</li>
-                <li><a href="#">English</a></li>
-                <li><a href="#">Korean</a></li>
+                <li data-langNum="13">Language</li>
+                <li><a href="#none" data-lang="ko" data-langNum="14" class="lang_btn">Korean</a></li>
+                <li><a href="#none" data-lang="en" data-langNum="15" class="lang_btn">English</a></li>
             </ul>
             <ul>
                 <li></li>
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" data-langNum="16">Sign In</a></li>
+                <li><a href="#" data-langNum="17">Search</a></li>
+                <li><a href="#" data-langNum="18">Contact</a></li>
             </ul>
         </div>
         <div id="bottom_footer">
             <div id="footer_logo">
-                <a href="#"><img src="../images/givenchy_footer_logo.png" alt=""></a>
+                <a href="../index.html"><img src="../images/givenchy_footer_logo.png" alt=""></a>
             </div>
             <div id="copyright">
                 <span>Copyright 2021. All rights reserved.</span>

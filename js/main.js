@@ -1,7 +1,7 @@
 // YTPlayer start
-YTPlayer();
+YTPlayerVideo();
 
-function YTPlayer() {
+function YTPlayerVideo() {
     jQuery( function() {
         jQuery( '#about_video' ).YTPlayer();
     });
@@ -23,9 +23,9 @@ function YTPlayer() {
 // YTPlayer end
 
 // slick start
-slick();
+slickSlide();
 
-function slick() {
+function slickSlide() {
     $('.slick').slick({ 
         dots: true, //페이지 네비게이션 
         arrows: true, // next, prev 이동 버튼 
@@ -62,3 +62,5 @@ function slick() {
     });
 }
 // slick end
+
+
