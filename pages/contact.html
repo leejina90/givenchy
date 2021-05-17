@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@
         <div id="top_menu">
             <div id="left_menu">
                 <div id="language">
+                    <label for="select"></label>
                     <select name="select_lang" id="select">
                         <option selected="selected" data-langNum="0">Language</option>
                         <option data-lang="ko" data-langNum="1">Korean</option>
@@ -62,19 +63,19 @@
             <h1 data-langNum="31">CONTACT</h1>
             <p>
                 <label for="name" data-langNum="32">NAME</label>
-                <input type="text" class="txt_box" name="name">
+                <input type="text" class="txt_box" name="name" id="name">
             </p>
             <p>
                 <label for="phone" data-langNum="33">PHONE</label>
-                <input type="text" class="txt_box" name="phone">    
+                <input type="text" class="txt_box" name="phone" id="phone">    
             </p>
             <p>
                 <label for="email" data-langNum="34">E-MAIL</label>
-                <input type="text" class="txt_box" name="email">  
+                <input type="text" class="txt_box" name="email" id="email">  
             </p>
             <p>
                 <label for="message" data-langNum="35">MESSAGE</label>
-                <textarea name="message" rows="5"></textarea>
+                <textarea name="message" rows="5" id="message"></textarea>
             </p>
             <p>
                 <input type="button" name="submit" class="mail_btn" value="SEND"/>
@@ -94,13 +95,13 @@
             </ul>
             <ul>
                 <li data-langNum="13">Language</li>
-                <li><a href="#none" data-lang="ko" data-langNum="14" class="lang_btn">Korean</a></li>
-                <li><a href="#none" data-lang="en" data-langNum="15" class="lang_btn">English</a></li>
+                <li><a href="javascript:;" data-lang="ko" data-langNum="14" class="lang_btn">Korean</a></li>
+                <li><a href="javascript:;" data-lang="en" data-langNum="15" class="lang_btn">English</a></li>
             </ul>
             <ul>
                 <li></li>
                 <li><a href="/pages/login.html" data-langNum="16">Sign In</a></li>
-                <li><a href="#" data-langNum="17">Search</a></li>
+                <li><a href="javascript:;" data-langNum="17">Search</a></li>
                 <li><a href="/pages/contact.html" data-langNum="18">Contact</a></li>
             </ul>
         </div>

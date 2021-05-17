@@ -171,6 +171,12 @@
     #login_section #login_wrap {
         width: 100%;
     }
+
+    /* contact page */
+    #contact_section #contact_wrap {
+        width: 300px;
+        margin: 15px;
+    }
 }
 @media screen and (min-width: 361px) and (max-width: 768px) {
     /* all_collection page */
@@ -189,6 +195,11 @@
     /* login_section */
     #login_section #login_wrap {
         width: 100%;
+    }
+
+    /* contact page */
+    #contact_section #contact_wrap {
+        width: 350px;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
