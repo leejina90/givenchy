@@ -46,13 +46,13 @@ function slickSlide() {
                     slidesToScroll: 3
                 } 
             }, { 
-                breakpoint: 600,// 반응형 ~ 600 
+                breakpoint: 768,// 반응형 ~ 768
                 settings: { 
                     slidesToShow: 2, 
                     slidesToScroll: 2 
                 } 
             }, { 
-                breakpoint: 480,// 반응형 ~ 480 
+                breakpoint: 360,// 반응형 ~ 360
                 settings: { 
                     slidesToShow: 1, 
                     slidesToScroll: 1 

@@ -128,3 +128,31 @@ function LanguageSetting() {
   });
 }
 // Language end
+
+// responsive start
+responsiveFunction();
+
+function responsiveFunction(){
+  $("#mobile_btn").click(function(){
+    $("#main_header").css({
+      "height":"100vh"
+    });
+    $("#top_menu").show();
+    $("#gnb").show();
+  
+    $("#mobile_close_btn").show();
+    $("#mobile_btn").hide();
+  });
+  
+  $("#mobile_close_btn").click(function(){
+    $("#main_header").css({
+      "height":"80px"
+    });
+    $("#top_menu").hide();
+    $("#gnb").hide();
+  
+    $("#mobile_close_btn").hide();
+    $("#mobile_btn").show();
+  });
+}
+// responsive end

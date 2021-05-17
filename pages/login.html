@@ -20,18 +20,20 @@
                     </select>
                 </div>
                 <div id="contact">
-                    <a href="/pages/contact.html" data-langNum="3">CONTACT</a>
+                    <a href="../pages/contact.html" data-langNum="3">CONTACT</a>
                 </div>
             </div>
             <div id="right_menu">
                 <div id="login">
-                    <a href="#" data-langNum="4">SIGN IN</a>
+                    <a href="../pages/login.html" data-langNum="4">SIGN IN</a>
                 </div>
                 <div id="search">
                     <a href="#"><i class="fas fa-search"></i></a>
                 </div>
             </div>
         </div>
+        <i class="fas fa-bars fa-2x" id="mobile_btn"></i>
+        <i class="fas fa-times fa-2x" id="mobile_close_btn"></i>
         <div id="bottom_menu">
             <div id="logo">
                 <a href="../index.html">
@@ -40,15 +42,17 @@
             </div>
             <div id="gnb">
                 <ul>
-                    <li><a href="../index.html#about" data-langNum="5">ABOUT</a></li>
-                    <li><a href="../index.html#collection" data-langNum="6">COLLECTION</a></li>
-                    <li><a href="../index.html#stage" data-langNum="7">STAGE</a></li>
+                    <li><a href="#about" data-langNum="5">ABOUT</a></li>
+                    <li id="collection_menu">
+                        <a href="#collection" id="btn_collection" data-langNum="6">COLLECTION</a>
+                        <ul id="lnb">
+                            <li id="collection_sub_menu">
+                                <a href="../pages/all_collection.html" data-langNum="8">ALL COLLECTION</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#stage" data-langNum="7">STAGE</a></li>
                 </ul>
-            </div>
-            <div id="lnb">
-                <div id="all_collection">
-                    <a href="#" data-langNum="8">ALL COLLECTION</a>
-                </div>
             </div>
         </div>
     </header>

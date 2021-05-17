@@ -151,3 +151,84 @@
     background-color: #fff;
     transition: 0.5s;
 }
+
+/* 반응형 */
+@media screen and (max-width: 360px) {
+/* all_collection page */
+    /* portfolio_section */
+    .portfolio_item_wrap .woman {
+        height: 7700px;
+    }
+    .portfolio_item_wrap .man {
+        height: 6800px;
+    }
+    .portfolio_item_wrap .portfolio_item a img {
+        width: 49.5%;
+    }
+
+    /* login page */
+    /* login_section */
+    #login_section #login_wrap {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 361px) and (max-width: 768px) {
+    /* all_collection page */
+    /* portfolio_section */
+    .portfolio_item_wrap .woman {
+        height: 7700px;
+    }
+    .portfolio_item_wrap .man {
+        height: 6800px;
+    }
+    .portfolio_item_wrap .portfolio_item a img {
+        width: 49.5%;
+    }
+
+    /* login page */
+    /* login_section */
+    #login_section #login_wrap {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+/* all_collection page */
+    /* portfolio_section */
+    .portfolio_item_wrap .woman {
+        height: 10600px;
+    }
+    .portfolio_item_wrap .man {
+        height: 9350px;
+    }
+    .portfolio_item_wrap .portfolio_item a img {
+        width: 49.5%;
+    }
+
+    /* login page */
+    /* login_section */
+    #login_section #login_wrap {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+/* all_collection page */
+    /* portfolio_section */
+    .portfolio_item_wrap .woman {
+        height: 6200px;
+    }
+    .portfolio_item_wrap .man {
+        height: 5200px;
+    }
+    .portfolio_item_wrap .portfolio_item a img {
+        width: 33%;
+    }
+
+    /* login page */
+    /* login_section */
+    #login_section #login_wrap {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1281px) {
+
+}
