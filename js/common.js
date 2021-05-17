@@ -39,7 +39,19 @@ function LanguageSetting() {
     // all_collection page
     25: "모두",
     26: "여성",
-    27: "남성"
+    27: "남성",
+
+    // login page
+    28: "로그인",
+    29: "환영합니다. ",
+    30: "로그아웃",
+
+    // contact page
+    31: "문의하기",
+    32: "성함",
+    33: "연락처",
+    34: "이메일",
+    35: "내용"
   };
   
   $.lang.en = {
@@ -77,7 +89,19 @@ function LanguageSetting() {
     // all_collection page
     25: "All",
     26: "WOMAN",
-    27: "MAN"
+    27: "MAN",
+
+    // login page
+    28: "SIGN IN",
+    29: "Wellcome ",
+    30: "SIGN OUT",
+
+    // contact page
+    31: "CONTACT",
+    32: "NAME",
+    33: "PHONE",
+    34: "E-MAIL",
+    35: "MESSAGE"
   };
   
   function setLanguage(currentLanguage) {

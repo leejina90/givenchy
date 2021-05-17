@@ -7,6 +7,10 @@
     height: 800px;
     color: #fff;
     text-align: center;
+    /* background-image: url("../images/main_image_02.png"); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 }
 #main_content #main_txt {
     font-size: 10em;
@@ -79,17 +83,19 @@ span.txt_normal {
     text-align: center;
 }
 #collection #more_btn button {
-    width: 100px;
-    height: 30px;
-    margin: 50px;
-    background-color: rgba(60,60,60,0.5);
-    border: none;
-    color: #ccc;
-    transition: 0.3s;
+    width: 300px;
+    height: 40px;
+    border: 2px solid #fff;
+    margin: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
 }
 #collection #more_btn button:hover {
-    background-color: rgba(110,110,110,0.5);
-    color: #fff;
+    color: #000;
+    background-color: #fff;
+    transition: 0.5s;
 }
 
 /* section03 stage */
@@ -104,7 +110,7 @@ span.txt_normal {
     background-size: 100%;
 }
 #stage_bg_02 {
-    height: 1400px;
+    height: 1000px;
     background-image: url("../images/stage02.png");
     background-repeat: no-repeat;
     background-size: 100%;

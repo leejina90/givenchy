@@ -193,6 +193,7 @@ select {
     float: left;
     font-weight: bold;
     font-size: 1em;
+    background-color: #fff;
 }
 #main_header #bottom_menu #gnb ul li a {
     width: 100%;
@@ -203,9 +204,19 @@ select {
     color: #fff;
     transition: 1s;
 }
+#collection_menu {
+    display: inline-block;
+}
 /* lnb */
-#main_header #bottom_menu #lnb {
+#lnb {
+    position: absolute;
     display: none;
+}
+#lnb li {
+    display: inline-block;
+}
+#collection_menu:hover #lnb {
+    display: block;
 }
 
 /* main_footer */

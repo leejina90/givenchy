@@ -53,7 +53,29 @@
         </div>
     </header>
 
-    <section>
+    <section id="contact_section">
+        <form id="contact_wrap">
+            <h1 data-langNum="31">CONTACT</h1>
+            <p>
+                <label for="name" data-langNum="32">NAME</label>
+                <input type="text" class="txt_box" name="name">
+            </p>
+            <p>
+                <label for="phone" data-langNum="33">PHONE</label>
+                <input type="text" class="txt_box" name="phone">    
+            </p>
+            <p>
+                <label for="email" data-langNum="34">E-MAIL</label>
+                <input type="text" class="txt_box" name="email">  
+            </p>
+            <p>
+                <label for="message" data-langNum="35">MESSAGE</label>
+                <textarea name="message" rows="5"></textarea>
+            </p>
+            <p>
+                <input type="button" name="submit" class="mail_btn" value="SEND"/>
+            </p>
+        </form>
         
     </section>
 
@@ -90,6 +112,7 @@
 
 	<!--js 파일-->
 	<script src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 	<script src="../js/common.js"></script>
 	<script src="../js/sub.js"></script>
 	<script src="../js/login.js"></script>
