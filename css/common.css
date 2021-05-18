@@ -599,7 +599,7 @@ select {
         font-size: 0.8em;
     }
     #main_footer #bottom_footer #copyright {
-        float: left;
+        float: right;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {

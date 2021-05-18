@@ -5,15 +5,17 @@
     width: 100%;
     height: 800px;
     color: #fff;
-    text-align: center;
-    /* background-image: url("../images/main_image_02.png"); */
+    background-image: url("../images/main_image_04.png");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: 20%;
 
 }
 #main_content #main_txt {
+    width: 1280px;
+    margin: 0 auto;
     font-size: 10em;
-    padding: 200px 0;
+    padding: 200px 100px;
 }
 #main_content #main_txt span {
     display: block;
@@ -174,13 +176,17 @@ span.txt_normal {
 
 /* 반응형 */
 @media screen and (max-width: 360px) {
+    #main_content {
+        background-size: 300%;
+        background-position: -480px 0px;
+    }
     /* main_content */
     #main_content {
         height: 600px;
     }
     #main_content #main_txt {
         font-size: 3.5em;
-        padding: 250px 0;
+        padding: 250px 10px;
     }
     /* about */
     #about {
@@ -233,11 +239,15 @@ span.txt_normal {
 @media screen and (min-width: 361px) and (max-width: 480px) {
     /* main_content */
     #main_content {
+        background-size: 300%;
+        background-position: -480px 0px;
+    }
+    #main_content {
         height: 600px;
     }
     #main_content #main_txt {
         font-size: 4em;
-        padding: 250px 0;
+        padding: 250px 20px;
     }
     /* about */
     #about {
@@ -289,9 +299,13 @@ span.txt_normal {
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
     /* main_content */
+    #main_content {
+        background-size: 200%;
+        background-position: -450px 0px;
+    }
     #main_content #main_txt {
         font-size: 6.5em;
-        padding: 300px 0;
+        padding: 300px 30px;
     }
     /* about */
     #about {
@@ -338,9 +352,13 @@ span.txt_normal {
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* main_content */
+    #main_content {
+        background-size: 130%;
+        background-position: 0px 0px;
+    }
     #main_content #main_txt {
         font-size: 7em;
-        padding: 200px 0;
+        padding: 200px 50px;
     }
     /* about */
     #about {
@@ -389,7 +407,7 @@ span.txt_normal {
     /* main_content */
     #main_content #main_txt {
         font-size: 7em;
-        padding: 200px 0;
+        padding: 200px 100px;
     }
     /* about */
     #about {
