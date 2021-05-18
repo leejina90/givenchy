@@ -236,7 +236,7 @@ span.txt_normal {
         height: 600px;
     }
     #main_content #main_txt {
-        font-size: 4.3em;
+        font-size: 4em;
         padding: 250px 0;
     }
     /* about */
@@ -290,7 +290,7 @@ span.txt_normal {
 @media screen and (min-width: 481px) and (max-width: 768px) {
     /* main_content */
     #main_content #main_txt {
-        font-size: 7em;
+        font-size: 6.5em;
         padding: 300px 0;
     }
     /* about */
