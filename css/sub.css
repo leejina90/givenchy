@@ -153,17 +153,51 @@
 }
 
 /* 반응형 */
-@media screen and (max-width: 360px) {
-/* all_collection page */
+@media screen and (max-width: 280px) {
+    /* all_collection page */
     /* portfolio_section */
+    .portfolio_section .btn_set {
+        width: 245px;
+    }
+    .portfolio_section .btn_set li a {
+        padding: 5px 18px;
+    }
     .portfolio_item_wrap .woman {
-        height: 7700px;
+        height: 12000px;
     }
     .portfolio_item_wrap .man {
-        height: 6800px;
+        height: 10100px;
     }
     .portfolio_item_wrap .portfolio_item a img {
-        width: 49.5%;
+        width: 100%;
+    }
+
+    /* login page */
+    /* login_section */
+    #login_section #login_wrap {
+        width: 100%;
+    }
+    #login_section #user_id, #user_pw, #login_btn, #logout_btn {
+        width: 240px;
+    }
+
+    /* contact page */
+    #contact_section #contact_wrap {
+        width: 240px;
+        margin: 10px;
+    }
+}
+@media screen and (min-width: 281px) and (max-width: 360px) {
+    /* all_collection page */
+    /* portfolio_section */
+    .portfolio_item_wrap .woman {
+        height: 15400px;
+    }
+    .portfolio_item_wrap .man {
+        height: 13000px;
+    }
+    .portfolio_item_wrap .portfolio_item a img {
+        width: 100%;
     }
 
     /* login page */

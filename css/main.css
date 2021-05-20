@@ -84,7 +84,7 @@ span.txt_normal {
     text-align: center;
 }
 #collection #more_btn button {
-    width: 300px;
+    width: 230px;
     height: 40px;
     border: 2px solid #fff;
     margin: 20px;
@@ -175,7 +175,68 @@ span.txt_normal {
 }
 
 /* 반응형 */
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 280px){
+    #main_content {
+        background-size: 300%;
+        background-position: -480px 0px;
+    }
+    /* main_content */
+    #main_content {
+        height: 600px;
+    }
+    #main_content #main_txt {
+        font-size: 3.2em;
+        padding: 200px 10px;
+    }
+    /* about */
+    #about {
+        height: 950px;
+    }
+    /* section01 about_txt */
+    #about #about_txt {
+        height: 800px;
+    }
+    #about #about_txt span:nth-child(1) {
+        font-size: 1.8em;
+    }
+    #about #about_txt span:nth-child(2) {
+        font-size: 1.8em;
+    }
+    .txt_box {
+        padding: 100px 0;
+    }
+    span.txt_normal {
+        padding: 30px 50px;
+    }
+
+    /* section02 collection */
+    #collection {
+        height: 3500px;
+    }
+    #collection #model_list ul li {
+        width: 100%;
+    }
+
+    /* section03 stage */
+    #stage {
+        height: 1950px;
+    }
+    #stage_bg_01 {
+        height: 300px;
+    }
+    #stage_slide .slick li img {
+        height: 400px;
+    }
+    #stage_bg_02 {
+        height: 300px;
+    }
+
+    /* slick slide button */
+    .slick-dots {
+        left: 10%;
+    }
+}
+@media screen and (min-width: 281px) and (max-width: 360px) {
     #main_content {
         background-size: 300%;
         background-position: -480px 0px;
