@@ -175,7 +175,7 @@ span.txt_normal {
 }
 
 /* 반응형 */
-@media screen and (min-width: 280px){
+@media screen and (max-width: 280px){
     #main_content {
         background-size: 300%;
         background-position: -480px 0px;
